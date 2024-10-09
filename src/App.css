@@ -1,0 +1,368 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background color */
+  border-bottom: 1px solid #dee2e6; /* Border at the bottom */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000; /* Link color */
+  font-size: 24px; /* Larger font for Home */
+}
+
+.auth-links {
+  display: flex;
+  gap: 20px; /* Space between links */
+}
+
+.auth-links a {
+  text-decoration: none;
+  color: #007bff; /* Link color */
+}
+
+.auth-links a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.home-container {
+  text-align: center; /* Center align content */
+  padding: 50px; /* Padding around content */
+}
+
+.auth-links a {
+  text-decoration: none;
+  color: #007bff; /* Link color */
+  padding: 10px 15px; /* Padding around the link */
+  border: 1px solid #007bff; /* Border for button appearance */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.auth-links a:hover {
+  background-color: #007bff; /* Background color on hover */
+  color: white; /* Change text color on hover */
+}
+
+
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Container for pages */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Form styles */
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Layout */
+.header {
+  background: #007bff;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Admin Dashboard */
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.dashboard h2 {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Task Tracker */
+.task-tracker {
+  display: flex;
+  flex-direction: column;
+}
+
+.task {
+  background: #fff;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border-left: 5px solid #007bff;
+}
+
+.task.completed {
+  border-left-color: #28a745;
+}
+
+.feedback {
+  background: #fff;
+  padding: 15px;
+  border-left: 5px solid #ffca28;
+  margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background color */
+  border-bottom: 1px solid #dee2e6; /* Border at the bottom */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000; /* Link color */
+  font-size: 24px; /* Larger font for Home */
+}
+
+.auth-links {
+  display: flex;
+  gap: 20px; /* Space between links */
+}
+
+.auth-links a {
+  text-decoration: none;
+  color: #007bff; /* Link color */
+}
+
+.auth-links a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.home-container {
+  text-align: center; /* Center align content */
+  padding: 50px; /* Padding around content */
+}
+
+
+
+/* App.css */
+
+/* Navbar Styles */
+.navbar {
+  background-color: #4CAF50; /* Green background */
+  overflow: hidden;
+  padding: 15px;
+}
+
+.nav-link {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth-links {
+  float: right; /* Align auth links to the right */
+}
+
+.auth-links a, .auth-links button {
+  color: white;
+  text-decoration: none;
+  padding: 14px 16px;
+  font-weight: bold;
+  background: none; /* Remove background for button */
+  border: none; /* Remove border for button */
+  cursor: pointer;
+}
+
+/* Home Page Styles */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  height: 80vh; /* Height of the page */
+  text-align: center;
+  background-color: #f9f9f9; /* Light gray background */
+}
+
+.home-title {
+  font-size: 2.5em; /* Title size */
+  color: #333; /* Dark gray text */
+  margin: 0;
+}
+
+.home-description {
+  font-size: 1.2em; /* Description size */
+  color: black; /* Medium gray text */
+  max-width: 600px; /* Max width for better readability */
+  margin: 20px 0;
+}
+
+.home-buttons {
+  margin-top: 20px; /* Space above buttons */
+}
+
+.home-button {
+  padding: 10px 20px; /* Button padding */
+  font-size: 1em; /* Font size */
+  color: white; /* Text color */
+  background-color: #45a049; /* Button background color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.home-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* General button styling */
+button {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer; /* Add cursor pointer for all buttons */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: rgb(2, 56, 2) /* Darker green background */
+}
